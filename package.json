@@ -1,0 +1,67 @@
+{
+  "name": "universal-data-extractor",
+  "version": "1.1.0",
+  "description": "Universal data extractor for CSV, Excel, JSON, and ZIP files with smart delimiter detection",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts --fix",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "csv",
+    "excel",
+    "xlsx",
+    "xls",
+    "json",
+    "zip",
+    "parser",
+    "extractor",
+    "data-import",
+    "file-parser",
+    "stream",
+    "delimiter-detection",
+    "typescript"
+  ],
+  "author": "ReDodge",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReDodge/universal-data-extractor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ReDodge/universal-data-extractor/issues"
+  },
+  "homepage": "https://github.com/ReDodge/universal-data-extractor#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "csv-parse": "^5.5.5",
+    "smart-csv-delimiter": "^1.0.0",
+    "stream-transform": "^3.2.0",
+    "xlstream": "^2.5.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.19.17",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
